@@ -9,12 +9,13 @@
   <meta property="og:title" content="HeavenForge Tech">
   <meta property="og:description" content="Chúng tôi đang rèn giũa nền tảng công nghệ tiếp theo.">
   <meta property="og:type" content="website">
-  <link rel="icon" type="image/png" href="/logo-HEAVENFORGETECH-1.png">
+  <link rel="icon" type="image/png" href="./logo-HEAVENFORGE TECH.png">
+
   <style>
     :root {
-      --bg: #0f1326;       /* nền thiên không đậm */
-      --fg: #eaf2ff;       /* chữ sáng */
-      --accent: #e0b44c;   /* vàng kim 'Forge' */
+      --bg: #0f1326;
+      --fg: #eaf2ff;
+      --accent: #e0b44c;
     }
 
     html, body {
@@ -28,67 +29,55 @@
       background: radial-gradient(1200px 600px at 50% 10%, #18204a, var(--bg));
       color: var(--fg);
       font: 16px/1.6 system-ui, Segoe UI, Roboto, Arial;
-      overflow: hidden;
     }
 
     .wrap {
       max-width: 720px;
       padding: 32px;
       text-align: center;
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     /* --- Logo --- */
     .logo {
-      height: 80px;
+      height: 78px;
       width: auto;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
       object-fit: contain;
-      position: relative;
-      z-index: 1;
-      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.08));
-      transform: translateY(3px);
-    }
-
-    .logo::before {
-      content: "";
-      position: absolute;
-      inset: -30px;
-      background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
-      border-radius: 50%;
-      z-index: -1;
+      filter: drop-shadow(0 0 5px rgba(255, 255, 255, .1));
     }
 
     /* --- Badge --- */
     .badge {
       display: inline-block;
-      margin-top: 4px;
-      margin-bottom: 18px;
-      padding: 0.4em 0.9em;
-      border: 1px solid rgba(255,255,255,0.25);
+      margin-bottom: 26px;
+      padding: .35em .9em;
+      border: 1px solid rgba(255, 255, 255, .25);
       border-radius: 999px;
       font-size: 14px;
-      letter-spacing: 0.5px;
-      opacity: 0.9;
-      background: rgba(255,255,255,0.04);
+      letter-spacing: .5px;
+      background: rgba(255, 255, 255, .05);
+      opacity: .9;
     }
 
     /* --- Heading --- */
     h1 {
       margin: 0 0 .25em;
       font-size: clamp(28px, 4vw, 44px);
-      letter-spacing: 0.5px;
+      letter-spacing: .5px;
     }
 
     p {
-      opacity: 0.9;
+      opacity: .9;
       margin: .25em 0 1.25em;
     }
 
     .tagline {
       font-size: clamp(16px, 2.2vw, 20px);
-      font-weight: 500;
       color: #d8e3ff;
+      font-weight: 500;
     }
 
     /* --- CTA --- */
@@ -96,49 +85,47 @@
       display: inline-block;
       padding: .75em 1em;
       border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.25);
+      border: 1px solid rgba(255, 255, 255, .25);
       text-decoration: none;
       color: var(--fg);
-      background: rgba(255,255,255,0.02);
-      transition: all 0.25s ease-in-out;
+      background: rgba(255, 255, 255, .02);
+      transition: all .25s ease-in-out;
     }
 
     .cta:hover {
       border-color: var(--accent);
-      box-shadow: 0 0 8px rgba(224,180,76,0.3);
+      box-shadow: 0 0 8px rgba(224, 180, 76, .3);
       transform: scale(1.03);
     }
 
-    /* --- Footer --- */
     footer {
-      opacity: 0.6;
+      opacity: .6;
       font-size: 14px;
       margin-top: 2rem;
     }
 
     @media (max-width: 480px) {
-      .logo {
-        height: 64px;
-        transform: translateY(2px);
-      }
-      .wrap {
-        padding: 24px;
-      }
-      h1 {
-        font-size: 32px;
-      }
+      .logo { height: 80px; }
+      .wrap { padding: 24px; }
+      h1 { font-size: 32px; }
     }
   </style>
 </head>
 
 <body>
   <main class="wrap">
-    <img src="/logo-HEAVENFORGETECH-1.png" alt="HeavenForge Tech Logo" class="logo">
+    <!-- Logo trên cùng -->
+    <img src="./logo-HEAVENFORGETECH-1.png" alt="HeavenForge Tech Logo" class="logo">
+
+    <!-- Badge ngay bên dưới logo -->
     <div class="badge">COMING SOON</div>
+
+    <!-- Nội dung chính -->
     <h1>HeavenForge Tech</h1>
     <p class="tagline">Forging smarter systems to reach the heavens.</p>
     <p>Chúng tôi đang hoàn thiện nền tảng. Đăng ký để nhận thông báo khi ra mắt.</p>
     <a class="cta" href="mailto:heavenforge.tech@gmail.com">Liên hệ: heavenforge.tech@gmail.com</a>
+
     <footer>© HeavenForge Tech</footer>
   </main>
 </body>
