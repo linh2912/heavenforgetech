@@ -121,25 +121,38 @@
 
     <!-- Nội dung chính -->
     <h1>HeavenForge Tech</h1>
-    <p class="tagline">Where ideas are forged into reality.</p>
+    <p class="tagline">Forging smarter systems to reach the heavens.</p>
     <p>Chúng tôi đang hoàn thiện nền tảng. Đăng ký để nhận thông báo khi ra mắt.</p>
-      <span class="cta">Liên hệ: </span>
-<script>
-(function(){
-  const codes = [99,111,110,116,97,99,116,64,104,101,97,118,101,110,102,111,114,103,101,116,101,99,104,46,99,111,109];
-  const email = String.fromCharCode(...codes);
-  const a = document.createElement('a');
-  a.href = 'mailto:' + email;
-  a.textContent = email;
-  a.className = 'cta';
-  document.getElementById('contact-mail').appendChild(a);
-})();
-</script>
+
+    <!-- Email placeholder: không có email plaintext trong HTML -->
+    <span id="contact-mail" aria-label="contact email"></span>
 
     <footer>© HeavenForge Tech</footer>
   </main>
+
+  <!-- JS obfuscation: email chỉ được tạo khi trình duyệt thực thi JS -->
+  <script>
+    (function () {
+      // ASCII codes for "contact@heavenforgetech.com"
+      const codes = [99,111,110,116,97,99,116,64,104,101,97,118,101,110,102,111,114,103,101,116,101,99,104,46,99,111,109];
+      const email = String.fromCharCode(...codes);
+
+      // Tạo thẻ <a> mailto
+      const a = document.createElement('a');
+      a.href = 'mailto:' + email;
+      a.textContent = 'Liên hệ: ' + email;
+      a.className = 'cta';
+      a.setAttribute('rel', 'nofollow'); // giảm rủi ro SEO/spam
+      a.setAttribute('aria-label', 'Email liên hệ HeavenForge Tech');
+
+      // Gắn vào DOM
+      const holder = document.getElementById('contact-mail');
+      if (holder) holder.appendChild(a);
+    })();
+  </script>
 </body>
 </html>
+
 
 
 
