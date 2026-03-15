@@ -59,11 +59,10 @@ if (!prefersReducedMotion) {
     entries.forEach(e => {
       if (e.isIntersecting) {
         e.target.classList.add('visible');
-      } else {
-        e.target.classList.remove('visible');
+        obs.unobserve(e.target); // Stop observing — keep visible permanently
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.08 });
 
   document.querySelectorAll('.glass-card, .tech-item, .section-title, .section-label, .section-sub, .hero-content > *')
     .forEach(el => obs.observe(el));
