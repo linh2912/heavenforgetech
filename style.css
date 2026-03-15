@@ -1164,26 +1164,4 @@ ul {
   .footer-bottom {
     font-size: 13px;
   }
-}
-
-/* ===== REDUCED MOTION ===== */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-
-  .glass-card,
-  .tech-item,
-  .section-title,
-  .section-label,
-  .section-sub,
-  .hero-content > * {
-    opacity: 1;
-    transform: none;
-  }
-}
+}
