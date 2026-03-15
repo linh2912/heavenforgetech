@@ -48,26 +48,21 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// === Scroll animations (replay on re-scroll) ===
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+// === Scroll reveal animations ===
+const REVEAL_SELECTOR = '.glass-card, .tech-item, .section-title, .section-label, .section-sub, .hero-content > *';
 
-if (!prefersReducedMotion) {
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        obs.unobserve(e.target); // Stop observing — keep visible permanently
-      }
-    });
-  }, { threshold: 0.08 });
+const revealObserver = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
 
-  document.querySelectorAll('.glass-card, .tech-item, .section-title, .section-label, .section-sub, .hero-content > *')
-    .forEach(el => obs.observe(el));
-} else {
-  // If user prefers reduced motion, show everything immediately
-  document.querySelectorAll('.glass-card, .tech-item, .section-title, .section-label, .section-sub, .hero-content > *')
-    .forEach(el => el.classList.add('visible'));
-}
+document.querySelectorAll(REVEAL_SELECTOR).forEach(function (el) {
+  revealObserver.observe(el);
+});
 
 // === Dynamic copyright year ===
 document.querySelectorAll('.footer-bottom p').forEach(p => {
