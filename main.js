@@ -1,5 +1,8 @@
 // ===== HeavenForge Tech — Shared Scripts =====
 
+// === Mark JS as loaded (enables CSS animations) ===
+document.documentElement.classList.add('js-ready');
+
 // === Email obfuscation (only on index page) ===
 (function () {
   const h = document.getElementById('contact-mail');
