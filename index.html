@@ -72,12 +72,11 @@
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#hero">Trang chủ</a></li>
-        <li><a href="#about">Giới thiệu</a></li>
-        <li><a href="./products/">Sản phẩm</a></li>
-        <li><a href="#services">Dịch vụ</a></li>
-        <li><a href="#process">Quy trình</a></li>
-        <li><a href="#contact" class="nav-cta">Liên hệ</a></li>
+        <li><a href="#hero" data-i18n="nav.home">Trang chủ</a></li>
+        <li><a href="./products/" data-i18n="nav.products">Sản phẩm</a></li>
+        <li><a href="./guide/" data-i18n="nav.guide">Hướng dẫn</a></li>
+        <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Liên hệ</a></li>
+        <li><button id="langToggle" class="lang-toggle" onclick="setLang(getLang()==='vi'?'en':'vi')">EN</button></li>
       </ul>
     </nav>
   </header>
@@ -89,11 +88,11 @@
       <!-- <div class="badge animate-fade">CÔNG TY CÔNG NGHỆ</div>-->
       <h1 class="animate-fade">HeavenForge <span class="accent">Tech</span></h1>
       <p class="hero-tagline animate-fade">Where ideas are forged into reality.</p>
-      <p class="hero-desc animate-fade">Chúng tôi cung cấp giải pháp công nghệ toàn diện — từ phát triển phần mềm, tư
-        vấn chuyển đổi số đến triển khai hạ tầng đám mây.</p>
+      <p class="hero-desc animate-fade" data-i18n="hero.desc">Chúng tôi phát triển phần mềm quản lý doanh nghiệp hiện đại — từ hệ thống ERP,
+        quản lý kho hàng đến tư vấn chuyển đổi số toàn diện.</p>
       <div class="hero-btns animate-fade">
-        <a href="#services" class="btn btn-primary">Khám phá dịch vụ</a>
-        <a href="#contact" class="btn btn-outline">Liên hệ ngay</a>
+        <a href="#services" class="btn btn-primary" data-i18n="hero.btn.services">Khám phá dịch vụ</a>
+        <a href="#contact" class="btn btn-outline" data-i18n="hero.btn.contact">Liên hệ ngay</a>
       </div>
     </div>
   </section>
@@ -101,8 +100,8 @@
   <!-- ===== ABOUT ===== -->
   <section id="about" class="section">
     <div class="container">
-      <div class="section-label">VỀ CHÚNG TÔI</div>
-      <h2 class="section-title">Rèn Giũa Công Nghệ,<br>Kiến Tạo Tương Lai</h2>
+      <div class="section-label" data-i18n="about.label">VỀ CHÚNG TÔI</div>
+      <h2 class="section-title" data-i18n="about.title">Rèn Giũa Công Nghệ,<br>Kiến Tạo Tương Lai</h2>
       <div class="about-grid">
         <div class="about-card glass-card">
           <div class="about-icon">
@@ -111,8 +110,8 @@
               <path d="M12 6v6l4 2" />
             </svg>
           </div>
-          <h3>Sứ Mệnh</h3>
-          <p>Mang đến các giải pháp phần mềm chất lượng cao, giúp doanh nghiệp tối ưu vận hành và tăng trưởng bền vững
+          <h3 data-i18n="about.mission">Sứ Mệnh</h3>
+          <p data-i18n="about.mission.desc">Mang đến các giải pháp phần mềm chất lượng cao, giúp doanh nghiệp tối ưu vận hành và tăng trưởng bền vững
             thông qua công nghệ hiện đại.</p>
         </div>
         <div class="about-card glass-card">
@@ -122,8 +121,8 @@
               <circle cx="12" cy="12" r="3" />
             </svg>
           </div>
-          <h3>Tầm Nhìn</h3>
-          <p>Trở thành đối tác công nghệ tin cậy hàng đầu, tiên phong áp dụng những xu hướng mới nhất để tạo ra giá trị
+          <h3 data-i18n="about.vision">Tầm Nhìn</h3>
+          <p data-i18n="about.vision.desc">Trở thành đối tác công nghệ tin cậy hàng đầu, tiên phong áp dụng những xu hướng mới nhất để tạo ra giá trị
             đột phá cho khách hàng.</p>
         </div>
         <div class="about-card glass-card">
@@ -134,8 +133,8 @@
               <path d="M2 12l10 5 10-5" />
             </svg>
           </div>
-          <h3>Giá Trị Cốt Lõi</h3>
-          <p>Chất lượng — Sáng tạo — Cam kết. Mọi sản phẩm đều được xây dựng với tiêu chuẩn cao nhất, đặt lợi ích khách
+          <h3 data-i18n="about.values">Giá Trị Cốt Lõi</h3>
+          <p data-i18n="about.values.desc">Chất lượng — Sáng tạo — Cam kết. Mọi sản phẩm đều được xây dựng với tiêu chuẩn cao nhất, đặt lợi ích khách
             hàng làm trung tâm.</p>
         </div>
       </div>
@@ -145,9 +144,9 @@
   <!-- ===== SERVICES ===== -->
   <section id="services" class="section section-alt">
     <div class="container">
-      <div class="section-label">DỊCH VỤ</div>
-      <h2 class="section-title">Nghiệp Vụ Của Chúng Tôi</h2>
-      <p class="section-sub">Chúng tôi cung cấp các giải pháp công nghệ đa dạng, phù hợp với mọi quy mô doanh nghiệp.
+      <div class="section-label" data-i18n="services.label">DỊCH VỤ</div>
+      <h2 class="section-title" data-i18n="services.title">Nghiệp Vụ Của Chúng Tôi</h2>
+      <p class="section-sub" data-i18n="services.sub">Chúng tôi cung cấp các giải pháp công nghệ đa dạng, phù hợp với mọi quy mô doanh nghiệp.
       </p>
       <div class="services-grid">
         <div class="service-card glass-card">
@@ -157,8 +156,8 @@
               <path d="M8 21h8M12 17v4" />
             </svg>
           </div>
-          <h3>Phát Triển Phần Mềm</h3>
-          <p>Thiết kế và phát triển ứng dụng Web, Mobile, Desktop theo yêu cầu. Sử dụng công nghệ hiện đại, kiến trúc
+          <h3 data-i18n="services.dev.title">Phát Triển Phần Mềm</h3>
+          <p data-i18n="services.dev.desc">Thiết kế và phát triển ứng dụng Web, Mobile, Desktop theo yêu cầu. Sử dụng công nghệ hiện đại, kiến trúc
             linh hoạt và khả năng mở rộng cao.</p>
           <ul class="service-list">
             <li>Web Application (SPA / PWA)</li>
@@ -175,14 +174,14 @@
               <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" />
             </svg>
           </div>
-          <h3>Giải Pháp ERP</h3>
-          <p>Xây dựng hệ thống quản lý doanh nghiệp tổng thể: quản lý kho, bán hàng, nhân sự, tài chính — tích hợp trên
-            một nền tảng duy nhất.</p>
+          <h3 data-i18n="services.erp.title">Giải Pháp ERP — ForgeCore</h3>
+          <p data-i18n="services.erp.desc">Hệ thống <strong>ForgeCore</strong> quản lý toàn bộ hoạt động doanh nghiệp: kho hàng, bán hàng, đơn hàng, hóa đơn — tích hợp trên
+            một nền tảng duy nhất, đa thiết bị.</p>
           <ul class="service-list">
-            <li>Quản lý Kho & Xuất nhập</li>
-            <li>Quản lý Bán hàng & CRM</li>
-            <li>Quản lý Nhân sự & Chấm công</li>
-            <li>Báo cáo & Thống kê</li>
+            <li data-i18n="services.erp.1">Quản lý Kho & Xuất nhập kho</li>
+            <li data-i18n="services.erp.2">Đơn hàng, Hóa đơn & Khách hàng</li>
+            <li data-i18n="services.erp.3">Phân quyền & Bảo mật dữ liệu</li>
+            <li data-i18n="services.erp.4">Báo cáo & Thống kê trực quan</li>
           </ul>
         </div>
         <div class="service-card glass-card">
@@ -192,32 +191,16 @@
               <path d="M2 12h4l3-9 4 18 3-9h4" />
             </svg>
           </div>
-          <h3>Tư Vấn Chuyển Đổi Số</h3>
-          <p>Đánh giá hiện trạng, xây dựng lộ trình và triển khai chuyển đổi số toàn diện giúp doanh nghiệp nâng cao
+          <h3 data-i18n="services.digi.title">Tư Vấn Chuyển Đổi Số</h3>
+          <p data-i18n="services.digi.desc">Đánh giá hiện trạng, xây dựng lộ trình và triển khai chuyển đổi số toàn diện giúp doanh nghiệp nâng cao
             năng lực cạnh tranh.</p>
           <ul class="service-list">
-            <li>Đánh giá & Tư vấn chiến lược</li>
-            <li>Số hóa quy trình nghiệp vụ</li>
-            <li>Tích hợp hệ thống</li>
-            <li>Đào tạo & Chuyển giao</li>
+            <li data-i18n="services.digi.1">Đánh giá & Tư vấn chiến lược</li>
+            <li data-i18n="services.digi.2">Số hóa quy trình nghiệp vụ</li>
+            <li data-i18n="services.digi.3">Tích hợp hệ thống</li>
+            <li data-i18n="services.digi.4">Đào tạo & Chuyển giao</li>
           </ul>
         </div>
-        <!--<div class="service-card glass-card">
-          <div class="service-icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5">
-              <path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z" />
-            </svg>
-          </div>
-          <h3>Cloud & DevOps</h3>
-          <p>Thiết kế hạ tầng đám mây, CI/CD pipeline, giám sát hệ thống và đảm bảo uptime tối đa cho ứng dụng của bạn.
-          </p>
-          <ul class="service-list">
-            <li>Cloud Architecture (Azure / AWS)</li>
-            <li>CI/CD & Automation</li>
-            <li>Monitoring & Logging</li>
-            <li>Security & Compliance</li>
-          </ul>
-        </div>-->
       </div>
     </div>
   </section>
@@ -225,51 +208,91 @@
   <!-- ===== PROCESS ===== -->
   <section id="process" class="section">
     <div class="container">
-      <div class="section-label">QUY TRÌNH</div>
-      <h2 class="section-title">Quy Trình Làm Việc</h2>
-      <p class="section-sub">Chúng tôi áp dụng quy trình Agile linh hoạt, đảm bảo tiến độ và chất lượng.</p>
+      <div class="section-label" data-i18n="process.label">QUY TRÌNH</div>
+      <h2 class="section-title" data-i18n="process.title">Quy Trình Làm Việc</h2>
+      <p class="section-sub" data-i18n="process.sub">Chúng tôi áp dụng quy trình Agile linh hoạt, đảm bảo tiến độ và chất lượng.</p>
       <div class="process-timeline">
         <div class="process-step glass-card">
           <div class="step-number">01</div>
-          <h3>Khảo Sát & Phân Tích</h3>
-          <p>Tìm hiểu yêu cầu, phân tích nghiệp vụ và xác định phạm vi dự án cùng khách hàng.</p>
+          <h3 data-i18n="process.1.title">Khảo Sát & Phân Tích</h3>
+          <p data-i18n="process.1.desc">Tìm hiểu yêu cầu, phân tích nghiệp vụ và xác định phạm vi dự án cùng khách hàng.</p>
         </div>
         <div class="process-step glass-card">
           <div class="step-number">02</div>
-          <h3>Thiết Kế & Lập Kế Hoạch</h3>
-          <p>Thiết kế kiến trúc hệ thống, giao diện người dùng và lập kế hoạch triển khai chi tiết.</p>
+          <h3 data-i18n="process.2.title">Thiết Kế & Lập Kế Hoạch</h3>
+          <p data-i18n="process.2.desc">Thiết kế kiến trúc hệ thống, giao diện người dùng và lập kế hoạch triển khai chi tiết.</p>
         </div>
         <div class="process-step glass-card">
           <div class="step-number">03</div>
-          <h3>Phát Triển & Kiểm Thử</h3>
-          <p>Phát triển theo sprint, kiểm thử liên tục và demo định kỳ để nhận phản hồi sớm.</p>
+          <h3 data-i18n="process.3.title">Phát Triển & Kiểm Thử</h3>
+          <p data-i18n="process.3.desc">Phát triển theo sprint, kiểm thử liên tục và demo định kỳ để nhận phản hồi sớm.</p>
         </div>
         <div class="process-step glass-card">
           <div class="step-number">04</div>
-          <h3>Triển Khai & Bảo Trì</h3>
-          <p>Go-live, đào tạo sử dụng, chuyển giao và hỗ trợ bảo trì dài hạn sau triển khai.</p>
+          <h3 data-i18n="process.4.title">Triển Khai & Bảo Trì</h3>
+          <p data-i18n="process.4.desc">Go-live, đào tạo sử dụng, chuyển giao và hỗ trợ bảo trì dài hạn sau triển khai.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== TECH STACK ===== -->
+  <!-- ===== SẢN PHẨM NỔI BẬT ===== -->
+  <section id="product" class="section section-alt">
+    <div class="container">
+      <div class="section-label" data-i18n="product.label">SẢN PHẨM</div>
+      <h2 class="section-title" data-i18n="product.title">Sản Phẩm Nổi Bật</h2>
+      <p class="section-sub" data-i18n="product.sub">Phần mềm quản lý doanh nghiệp được thiết kế dành riêng cho thị trường Việt Nam.</p>
+      <div class="product-showcase glass-card">
+        <div class="product-showcase-img">
+          <img src="./screenshots/quan-ly-kho/dashboard.webp" alt="ForgeCore Dashboard" loading="lazy">
+        </div>
+        <div class="product-showcase-info">
+          <h3 data-i18n="product.name">ForgeCore — Quản Lý Kho & Bán Hàng</h3>
+          <p data-i18n="product.desc">Hệ thống quản lý toàn diện giúp doanh nghiệp kiểm soát kho hàng, theo dõi xuất nhập, quản lý đơn hàng và báo cáo doanh thu — tất cả trên một nền tảng duy nhất.</p>
+          <div class="product-badges">
+            <span class="product-badge" data-i18n="product.badge.1">Đa nền tảng</span>
+            <span class="product-badge" data-i18n="product.badge.2">Bảo mật cao</span>
+            <span class="product-badge" data-i18n="product.badge.3">Tùy chỉnh linh hoạt</span>
+          </div>
+          <a href="./products/" class="btn btn-primary" data-i18n="product.btn">Xem chi tiết sản phẩm</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== CÔNG NGHỆ ===== -->
+  <section id="tech" class="section">
+    <div class="container">
+      <div class="section-label" data-i18n="tech.label">CÔNG NGHỆ</div>
+      <h2 class="section-title" data-i18n="tech.title">Nền Tảng Công Nghệ Vững Chắc</h2>
+      <p class="section-sub" data-i18n="tech.sub">Sản phẩm được xây dựng trên nền tảng hiện đại, đảm bảo hiệu suất và độ tin cậy cao.</p>
+      <div class="tech-grid">
+        <div class="tech-item" data-i18n="tech.1">🌐 Ứng dụng Web hiện đại</div>
+        <div class="tech-item" data-i18n="tech.2">📱 Hỗ trợ đa nền tảng</div>
+        <div class="tech-item" data-i18n="tech.3">🔒 Bảo mật dữ liệu doanh nghiệp</div>
+        <div class="tech-item" data-i18n="tech.4">⚡ Hiệu suất cao & ổn định</div>
+        <div class="tech-item" data-i18n="tech.5">🗄️ Cơ sở dữ liệu mạnh mẽ</div>
+        <div class="tech-item" data-i18n="tech.6">🎨 Giao diện trực quan & thân thiện</div>
+        <div class="tech-item" data-i18n="tech.7">📊 Báo cáo & phân tích thông minh</div>
+        <div class="tech-item" data-i18n="tech.8">🔧 Kiến trúc linh hoạt, dễ mở rộng</div>
+      </div>
+    </div>
+  </section>
 
   <!-- ===== CONTACT ===== -->
   <section id="contact" class="section">
     <div class="container">
-      <div class="section-label">LIÊN HỆ</div>
-      <h2 class="section-title">Hãy Kết Nối Với Chúng Tôi</h2>
-      <p class="section-sub">Bạn có dự án cần tư vấn? Hãy liên hệ — chúng tôi luôn sẵn sàng hỗ trợ.</p>
+      <div class="section-label" data-i18n="contact.label">LIÊN HỆ</div>
+      <h2 class="section-title" data-i18n="contact.title">Hãy Kết Nối Với Chúng Tôi</h2>
+      <p class="section-sub" data-i18n="contact.sub">Bạn có dự án cần tư vấn? Hãy liên hệ — chúng tôi luôn sẵn sàng hỗ trợ.</p>
       <div class="contact-info-center">
         <div class="contact-cta glass-card">
           <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
             <polyline points="22,6 12,13 2,6" />
           </svg>
-          <h3>Liên hệ với chúng tôi</h3>
-          <p>Hãy mô tả dự án hoặc yêu cầu của bạn — chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
+          <h3 data-i18n="contact.cta.title">Liên hệ với chúng tôi</h3>
+          <p data-i18n="contact.cta.desc">Hãy mô tả dự án hoặc yêu cầu của bạn — chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
           <span id="contact-mail"></span>
         </div>
         <div class="contact-details">
@@ -279,8 +302,8 @@
               <path d="M12 6v6l4 2" />
             </svg>
             <div>
-              <h4>Giờ làm việc</h4>
-              <p>Thứ 2 – Thứ 6: 8:00 – 17:30</p>
+              <h4 data-i18n="contact.hours.title">Giờ làm việc</h4>
+              <p data-i18n="contact.hours.desc">Thứ 2 – Thứ 6: 8:00 – 17:30</p>
             </div>
           </div>
         </div>
@@ -296,26 +319,28 @@
         <p>Where ideas are forged into reality.</p>
       </div>
       <div class="footer-links">
-        <h4>Liên kết</h4>
-        <a href="#about">Giới thiệu</a>
-        <a href="#services">Dịch vụ</a>
-        <a href="#process">Quy trình</a>
-        <a href="#contact">Liên hệ</a>
+        <h4 data-i18n="footer.links">Liên kết</h4>
+        <a href="#about" data-i18n="footer.about">Giới thiệu</a>
+        <a href="./products/" data-i18n="nav.products">Sản phẩm</a>
+        <a href="./guide/" data-i18n="nav.guide">Hướng dẫn</a>
+        <a href="#services" data-i18n="footer.services-title">Dịch vụ</a>
+        <a href="#contact" data-i18n="nav.contact">Liên hệ</a>
       </div>
       <div class="footer-links">
-        <h4>Dịch vụ</h4>
-        <a href="#services">Phát triển phần mềm</a>
-        <a href="#services">Giải pháp ERP</a>
-        <a href="#services">Chuyển đổi số</a>
+        <h4 data-i18n="footer.services-title">Dịch vụ</h4>
+        <a href="#services" data-i18n="footer.dev">Phát triển phần mềm</a>
+        <a href="#services" data-i18n="footer.erp">Giải pháp ERP</a>
+        <a href="#services" data-i18n="footer.digital">Chuyển đổi số</a>
 
       </div>
     </div>
     <div class="footer-bottom">
-      <p>Copyright ©2025 HeavenForge Tech. All rights reserved.</p>
+      <p>Copyright ©2026 HeavenForge Tech. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="main.js?v=4" defer></script>
+  <script src="i18n.js?v=1"></script>
+  <script src="main.js?v=5" defer></script>
 </body>
 
 </html>
