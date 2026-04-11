@@ -35,22 +35,52 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "HeavenForge Tech",
-    "url": "https://heavenforgetech.com",
-    "logo": "https://heavenforgetech.com/assets/HFTech_Logo_Primary.webp",
-    "description": "Công ty công nghệ chuyên phát triển phần mềm doanh nghiệp, giải pháp ERP quản lý nghiệp vụ, tư vấn chuyển đổi số.",
-    "address": { "@type": "PostalAddress", "addressCountry": "VN" },
-    "sameAs": [],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Dịch vụ Công nghệ",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Phát triển phần mềm doanh nghiệp", "description": "Thiết kế và phát triển ứng dụng Web, Mobile, Desktop theo yêu cầu doanh nghiệp." }},
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Giải pháp ERP & Quản lý nghiệp vụ", "description": "Hệ thống quản lý kho, bán hàng, nhân sự, tài chính tích hợp trên một nền tảng." }},
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tư vấn chuyển đổi số", "description": "Đánh giá, xây dựng lộ trình và triển khai chuyển đổi số toàn diện cho doanh nghiệp." }}
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://heavenforgetech.com/#organization",
+        "name": "HeavenForge Tech",
+        "url": "https://heavenforgetech.com",
+        "logo": "https://heavenforgetech.com/assets/HFTech_Logo_Primary.webp",
+        "description": "Công ty công nghệ chuyên phát triển phần mềm doanh nghiệp, giải pháp ERP quản lý nghiệp vụ, tư vấn chuyển đổi số.",
+        "address": { "@type": "PostalAddress", "addressCountry": "VN" }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://heavenforgetech.com/#website",
+        "url": "https://heavenforgetech.com",
+        "name": "HeavenForge Tech",
+        "publisher": { "@id": "https://heavenforgetech.com/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://heavenforgetech.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "SiteNavigationElement",
+            "position": 1,
+            "name": "Sản phẩm",
+            "url": "https://heavenforgetech.com/products/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 2,
+            "name": "Hướng dẫn",
+            "url": "https://heavenforgetech.com/guide/"
+          },
+          {
+            "@type": "SiteNavigationElement",
+            "position": 3,
+            "name": "ForgeCore - Quản lý Kho",
+            "url": "https://forgecore.heavenforgetech.com/"
+          }
+        ]
+      }
+    ]
   }
   </script>
   <link rel="icon" type="image/webp" href="./assets/favicon.webp">
