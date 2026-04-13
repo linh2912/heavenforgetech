@@ -248,14 +248,14 @@
                 <table class="compare-table">
                     <thead>
                         <tr>
-                            <th>Tiêu chí</th>
+                            <th data-i18n="guide.compare.th.criteria">Tiêu chí</th>
                             <th class="compare-old">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" aria-hidden="true" style="vertical-align:middle; margin-right:6px; opacity:.6">
                                     <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
                                     <polyline points="14 2 14 8 20 8" />
                                 </svg>
-                                Thủ công / Excel
+                                <span data-i18n="guide.compare.th.old">Thủ công / Excel</span>
                             </th>
                             <th class="compare-new">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -263,62 +263,55 @@
                                     <rect x="2" y="3" width="20" height="14" rx="2" />
                                     <path d="M8 21h8M12 17v4" />
                                 </svg>
-                                ForgeCore
+                                <span data-i18n="guide.compare.th.new">ForgeCore</span>
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Nhập liệu</strong></td>
-                            <td class="compare-old">Ghi tay, nhập thủ công vào sổ sách hoặc Excel — dễ sai sót, mất
-                                thời gian</td>
-                            <td class="compare-new">Nhập một lần trên hệ thống — dữ liệu tự động đồng bộ mọi nơi</td>
+                            <td><strong data-i18n="guide.compare.r1.label">Nhập liệu</strong></td>
+                            <td class="compare-old" data-i18n="guide.compare.r1.old">Ghi tay, nhập thủ công vào sổ sách hoặc Excel — dễ sai sót, mất thời gian</td>
+                            <td class="compare-new" data-i18n="guide.compare.r1.new">Nhập một lần trên hệ thống — dữ liệu tự động đồng bộ mọi nơi</td>
                         </tr>
                         <tr>
-                            <td><strong>Tồn kho</strong></td>
-                            <td class="compare-old">Kiểm đếm thủ công, không biết real-time — dễ bị lệch số liệu</td>
-                            <td class="compare-new">Cập nhật tự động khi nhập/xuất kho — luôn chính xác theo thời gian
-                                thực</td>
+                            <td><strong data-i18n="guide.compare.r2.label">Tồn kho</strong></td>
+                            <td class="compare-old" data-i18n="guide.compare.r2.old">Kiểm đếm thủ công, không biết real-time — dễ bị lệch số liệu</td>
+                            <td class="compare-new" data-i18n="guide.compare.r2.new">Cập nhật tự động khi nhập/xuất kho — luôn chính xác theo thời gian thực</td>
                         </tr>
                         <tr>
-                            <td><strong>Tạo phiếu</strong></td>
-                            <td class="compare-old">Viết phiếu tay hoặc copy template Excel — chậm, dễ nhầm</td>
-                            <td class="compare-new">Tạo phiếu tự động, mã phiếu tự sinh — chỉ vài click</td>
+                            <td><strong data-i18n="guide.compare.r3.label">Tạo phiếu</strong></td>
+                            <td class="compare-old" data-i18n="guide.compare.r3.old">Viết phiếu tay hoặc copy template Excel — chậm, dễ nhầm</td>
+                            <td class="compare-new" data-i18n="guide.compare.r3.new">Tạo phiếu tự động, mã phiếu tự sinh — chỉ vài click</td>
                         </tr>
                         <tr>
-                            <td><strong>Báo cáo</strong></td>
-                            <td class="compare-old">Tự tổng hợp bằng tay, mất hàng giờ — khó đảm bảo chính xác</td>
-                            <td class="compare-new">Báo cáo tự động, biểu đồ trực quan — xem ngay trên dashboard</td>
+                            <td><strong data-i18n="guide.compare.r4.label">Báo cáo</strong></td>
+                            <td class="compare-old" data-i18n="guide.compare.r4.old">Tự tổng hợp bằng tay, mất hàng giờ — khó đảm bảo chính xác</td>
+                            <td class="compare-new" data-i18n="guide.compare.r4.new">Báo cáo tự động, biểu đồ trực quan — xem ngay trên dashboard</td>
                         </tr>
                         <tr>
-                            <td><strong>Tìm kiếm</strong></td>
-                            <td class="compare-old">Lật sổ, dò file Excel — mất thời gian, khó tra cứu khi dữ liệu
-                                lớn</td>
-                            <td class="compare-new">Tìm kiếm tức thì theo tên, mã, danh mục — kết quả trong giây</td>
+                            <td><strong data-i18n="guide.compare.r5.label">Tìm kiếm</strong></td>
+                            <td class="compare-old" data-i18n="guide.compare.r5.old">Lật sổ, dò file Excel — mất thời gian, khó tra cứu khi dữ liệu lớn</td>
+                            <td class="compare-new" data-i18n="guide.compare.r5.new">Tìm kiếm tức thì theo tên, mã, danh mục — kết quả trong giây</td>
                         </tr>
                         <tr>
-                            <td><strong>Bảo mật</strong></td>
-                            <td class="compare-old">Sổ sách có thể bị mất, hỏng, không kiểm soát người xem</td>
-                            <td class="compare-new">Dữ liệu mã hóa, phân quyền truy cập, nhật ký theo dõi hành vi
-                            </td>
+                            <td><strong data-i18n="guide.compare.r6.label">Bảo mật</strong></td>
+                            <td class="compare-old" data-i18n="guide.compare.r6.old">Sổ sách có thể bị mất, hỏng, không kiểm soát người xem</td>
+                            <td class="compare-new" data-i18n="guide.compare.r6.new">Dữ liệu mã hóa, phân quyền truy cập, nhật ký theo dõi hành vi</td>
                         </tr>
                         <tr>
-                            <td><strong>Cảnh báo</strong></td>
-                            <td class="compare-old">Không có — chỉ phát hiện khi đã hết hàng hoặc gặp sự cố</td>
-                            <td class="compare-new">Cảnh báo tự động khi tồn kho thấp, phiếu mới, hóa đơn quá hạn
-                            </td>
+                            <td><strong data-i18n="guide.compare.r7.label">Cảnh báo</strong></td>
+                            <td class="compare-old" data-i18n="guide.compare.r7.old">Không có — chỉ phát hiện khi đã hết hàng hoặc gặp sự cố</td>
+                            <td class="compare-new" data-i18n="guide.compare.r7.new">Cảnh báo tự động khi tồn kho thấp, phiếu mới, hóa đơn quá hạn</td>
                         </tr>
                         <tr>
-                            <td><strong>Làm việc nhóm</strong></td>
-                            <td class="compare-old">Truyền tay sổ sách, gửi file qua email — dễ chồng chéo phiên bản
-                            </td>
-                            <td class="compare-new">Nhiều người dùng cùng lúc — dữ liệu cập nhật đồng bộ, không xung
-                                đột</td>
+                            <td><strong data-i18n="guide.compare.r8.label">Làm việc nhóm</strong></td>
+                            <td class="compare-old" data-i18n="guide.compare.r8.old">Truyền tay sổ sách, gửi file qua email — dễ chồng chéo phiên bản</td>
+                            <td class="compare-new" data-i18n="guide.compare.r8.new">Nhiều người dùng cùng lúc — dữ liệu cập nhật đồng bộ, không xung đột</td>
                         </tr>
                         <tr>
-                            <td><strong>Chi phí vận hành</strong></td>
-                            <td class="compare-old">Tốn giấy, in ấn, nhân sự kiểm kê — chi phí ẩn tích lũy lớn</td>
-                            <td class="compare-new">Giảm nhân sự xử lý thủ công, tiết kiệm giấy và thời gian</td>
+                            <td><strong data-i18n="guide.compare.r9.label">Chi phí vận hành</strong></td>
+                            <td class="compare-old" data-i18n="guide.compare.r9.old">Tốn giấy, in ấn, nhân sự kiểm kê — chi phí ẩn tích lũy lớn</td>
+                            <td class="compare-new" data-i18n="guide.compare.r9.new">Giảm nhân sự xử lý thủ công, tiết kiệm giấy và thời gian</td>
                         </tr>
                     </tbody>
                 </table>
@@ -350,17 +343,17 @@
                 <p>Where ideas are forged into reality.</p>
             </div>
             <div class="footer-links">
-                <h4>Liên kết</h4>
-                <a href="../index.html#about">Giới thiệu</a>
-                <a href="../products/">Sản phẩm</a>
-                <a href="./">Hướng dẫn</a>
-                <a href="../index.html#contact">Liên hệ</a>
+                <h4 data-i18n="footer.links">Liên kết</h4>
+                <a href="../index.html#about" data-i18n="footer.about">Giới thiệu</a>
+                <a href="../products/" data-i18n="nav.products">Sản phẩm</a>
+                <a href="./" data-i18n="nav.guide">Hướng dẫn</a>
+                <a href="../index.html#contact" data-i18n="nav.contact">Liên hệ</a>
             </div>
             <div class="footer-links">
-                <h4>Dịch vụ</h4>
-                <a href="../index.html#services">Phát triển phần mềm</a>
-                <a href="../index.html#services">Giải pháp ERP</a>
-                <a href="../index.html#services">Chuyển đổi số</a>
+                <h4 data-i18n="footer.services-title">Dịch vụ</h4>
+                <a href="../index.html#services" data-i18n="footer.dev">Phát triển phần mềm</a>
+                <a href="../index.html#services" data-i18n="footer.erp">Giải pháp ERP</a>
+                <a href="../index.html#services" data-i18n="footer.digital">Chuyển đổi số</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -368,7 +361,7 @@
         </div>
     </footer>
 
-    <script src="../i18n.js?v=1"></script>
+    <script src="../i18n.js?v=2"></script>
     <script src="../main.js?v=5" defer></script>
 </body>
 
