@@ -15,8 +15,8 @@ const TRANSLATIONS = {
 
   // ===== INDEX PAGE =====
   'hero.desc': {
-    vi: 'Chúng tôi phát triển phần mềm quản lý doanh nghiệp hiện đại — từ hệ thống ERP, quản lý kho hàng đến tư vấn chuyển đổi số toàn diện.',
-    en: 'We develop modern enterprise management software — from ERP systems, warehouse management to comprehensive digital transformation consulting.'
+    vi: 'Chúng tôi chuyên cung cấp phần mềm quản lý doanh nghiệp. Sản phẩm chính là ForgeCore — giúp bạn quản lý kho hàng, bán hàng, theo dõi công nợ, lập báo cáo tự động. Ngoài ra còn nhận phát triển phần mềm riêng theo yêu cầu và tư vấn chuyển đổi số.',
+    en: 'We provide enterprise management software. Our main product ForgeCore helps you manage inventory, sales, track debts, and auto-generate reports. We also develop custom software and offer digital transformation consulting.'
   },
   'hero.btn.services': { vi: 'Khám phá dịch vụ', en: 'Explore Services' },
   'hero.btn.contact': { vi: 'Liên hệ ngay', en: 'Contact Us' },
@@ -45,20 +45,24 @@ const TRANSLATIONS = {
     vi: 'Chúng tôi cung cấp các giải pháp công nghệ đa dạng, phù hợp với mọi quy mô doanh nghiệp.',
     en: 'We provide diverse technology solutions suitable for businesses of all sizes.'
   },
-  'services.dev.title': { vi: 'Phát Triển Phần Mềm', en: 'Software Development' },
+  'services.dev.title': { vi: 'Phát Triển Phần Mềm Theo Yêu Cầu', en: 'Custom Software Development' },
   'services.dev.desc': {
-    vi: 'Thiết kế và phát triển ứng dụng Web, Mobile, Desktop theo yêu cầu. Sử dụng công nghệ hiện đại, kiến trúc linh hoạt và khả năng mở rộng cao.',
-    en: 'Design and develop Web, Mobile, Desktop applications on demand. Using modern technology, flexible architecture and high scalability.'
+    vi: 'Xây dựng phần mềm "may đo" riêng cho từng loại hình doanh nghiệp. Dù bạn kinh doanh sản xuất, thương mại hay dịch vụ — chúng tôi đều tạo ra phần mềm phù hợp với quy trình làm việc thực tế của bạn, dùng được trên máy tính, điện thoại và máy tính bảng.',
+    en: 'We build custom software tailored to each business type. Whether you are in manufacturing, trading, or services — we create software that fits your actual workflow, usable on computers, phones, and tablets.'
   },
-  'services.erp.title': { vi: 'Giải Pháp ERP — ForgeCore', en: 'ERP Solution — ForgeCore' },
+  'services.dev.1': { vi: 'Phần mềm chạy trên trình duyệt, không cần cài đặt', en: 'Browser-based software, no installation needed' },
+  'services.dev.2': { vi: 'Ứng dụng điện thoại cho cả Android và iPhone', en: 'Mobile app for both Android and iPhone' },
+  'services.dev.3': { vi: 'Phần mềm cài trên máy tính Windows', en: 'Desktop software for Windows' },
+  'services.dev.4': { vi: 'Kết nối và đồng bộ dữ liệu giữa các hệ thống', en: 'Connect and sync data between systems' },
+  'services.erp.title': { vi: 'Phần Mềm Quản Lý Doanh Nghiệp — ForgeCore', en: 'Business Management Software — ForgeCore' },
   'services.erp.desc': {
-    vi: 'Hệ thống <strong>ForgeCore</strong> quản lý toàn bộ hoạt động doanh nghiệp: kho hàng, bán hàng, đơn hàng, hóa đơn — tích hợp trên một nền tảng duy nhất, đa thiết bị.',
-    en: 'The <strong>ForgeCore</strong> system manages all business operations: warehouse, sales, orders, invoices — integrated on a single, multi-device platform.'
+    vi: 'Phần mềm <strong>ForgeCore</strong> giúp doanh nghiệp quản lý mọi hoạt động kinh doanh trên một chương trình duy nhất: từ theo dõi hàng hóa trong kho, biết chính xác còn bao nhiêu hàng và hàng nào sắp hết, đến quản lý việc bán hàng, tạo đơn hàng, xuất hóa đơn, theo dõi khách hàng nợ tiền, và tự động tạo báo cáo kinh doanh. Mọi nhân viên được phân quyền rõ ràng — ai được xem gì, làm gì đều được kiểm soát chặt chẽ. Sử dụng được trên máy tính, điện thoại và máy tính bảng.',
+    en: 'The <strong>ForgeCore</strong> software helps businesses manage all operations in one place: from tracking goods in the warehouse, knowing exactly how much stock remains and which items are running low, to managing sales, creating orders, issuing invoices, tracking customer debts, and auto-generating business reports. Every employee has clear permissions — who can view and do what is tightly controlled. Works on computers, phones, and tablets.'
   },
-  'services.erp.1': { vi: 'Quản lý Kho & Xuất nhập kho', en: 'Warehouse & Import/Export Management' },
-  'services.erp.2': { vi: 'Đơn hàng, Hóa đơn & Khách hàng', en: 'Orders, Invoices & Customers' },
-  'services.erp.3': { vi: 'Phân quyền & Bảo mật dữ liệu', en: 'Authorization & Data Security' },
-  'services.erp.4': { vi: 'Báo cáo & Thống kê trực quan', en: 'Reports & Visual Analytics' },
+  'services.erp.1': { vi: 'Theo dõi hàng trong kho chính xác, cảnh báo khi hàng sắp hết', en: 'Accurate inventory tracking, alerts when stock is running low' },
+  'services.erp.2': { vi: 'Quản lý bán hàng, xuất hóa đơn, theo dõi công nợ khách hàng', en: 'Sales management, invoicing, customer debt tracking' },
+  'services.erp.3': { vi: 'Phân quyền nhân viên, bảo mật dữ liệu doanh nghiệp', en: 'Employee permissions, enterprise data security' },
+  'services.erp.4': { vi: 'Tự động lập báo cáo, xem biểu đồ kinh doanh trực quan', en: 'Automated reports, visual business charts' },
   'services.digi.title': { vi: 'Tư Vấn Chuyển Đổi Số', en: 'Digital Transformation Consulting' },
   'services.digi.desc': {
     vi: 'Đánh giá hiện trạng, xây dựng lộ trình và triển khai chuyển đổi số toàn diện giúp doanh nghiệp nâng cao năng lực cạnh tranh.',
@@ -102,10 +106,10 @@ const TRANSLATIONS = {
     vi: 'Phần mềm quản lý doanh nghiệp được thiết kế dành riêng cho thị trường Việt Nam.',
     en: 'Enterprise management software designed specifically for the Vietnamese market.'
   },
-  'product.name': { vi: 'ForgeCore — Quản Lý Kho & Bán Hàng', en: 'ForgeCore — Warehouse & Sales Management' },
+  'product.name': { vi: 'ForgeCore — Phần Mềm Quản Lý Kho & Bán Hàng', en: 'ForgeCore — Warehouse & Sales Management Software' },
   'product.desc': {
-    vi: 'Hệ thống quản lý toàn diện giúp doanh nghiệp kiểm soát kho hàng, theo dõi xuất nhập, quản lý đơn hàng và báo cáo doanh thu — tất cả trên một nền tảng duy nhất.',
-    en: 'A comprehensive management system helping businesses control inventory, track imports/exports, manage orders and revenue reports — all on a single platform.'
+    vi: 'ForgeCore giúp doanh nghiệp luôn biết chính xác trong kho còn bao nhiêu hàng, mặt hàng nào sắp hết cần nhập thêm, quản lý toàn bộ việc nhập kho từ nhà cung cấp và xuất kho cho các phòng ban. Ngoài ra còn hỗ trợ tạo đơn hàng, xuất hóa đơn bán hàng, theo dõi khách hàng nào đã thanh toán hay còn nợ, và tự động lập báo cáo kinh doanh chi tiết có thể xuất ra file Excel chỉ bằng một cú nhấp chuột. Tất cả đều dùng được trên máy tính, điện thoại và máy tính bảng.',
+    en: 'ForgeCore helps businesses always know exactly how much stock they have, which items are running low and need reordering, and manage all imports from suppliers and exports to departments. It also supports creating orders, issuing sales invoices, tracking which customers have paid or still owe money, and auto-generating detailed business reports that can be exported to Excel with just one click. Everything works on computers, phones, and tablets.'
   },
   'product.badge.1': { vi: 'Đa nền tảng', en: 'Multi-platform' },
   'product.badge.2': { vi: 'Bảo mật cao', en: 'High Security' },
