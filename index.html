@@ -74,7 +74,7 @@
         <li><a href="#hero" data-i18n="nav.home">Trang chủ</a></li>
         <li><a href="./products/" data-i18n="nav.products">Sản phẩm</a></li>
         <li><a href="./guide/" data-i18n="nav.guide">Hướng dẫn</a></li>
-        <li><a href="#contact" class="nav-cta" data-i18n="nav.contact">Liên hệ</a></li>
+        <li><a href="./contact/" class="nav-cta" data-i18n="nav.contact">Liên hệ</a></li>
         <li><button id="langToggle" class="lang-toggle" onclick="setLang(getLang()==='vi'?'en':'vi')">EN</button></li>
       </ul>
     </nav>
@@ -91,7 +91,7 @@
         quản lý kho hàng đến tư vấn chuyển đổi số toàn diện.</p>
       <div class="hero-btns animate-fade">
         <a href="#services" class="btn btn-primary" data-i18n="hero.btn.services">Khám phá dịch vụ</a>
-        <a href="#contact" class="btn btn-outline" data-i18n="hero.btn.contact">Liên hệ ngay</a>
+        <a href="./contact/" class="btn btn-outline" data-i18n="hero.btn.contact">Liên hệ ngay</a>
       </div>
     </div>
   </section>
@@ -278,73 +278,6 @@
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section">
-    <div class="container">
-      <div class="section-label" data-i18n="contact.label">LIÊN HỆ</div>
-      <h2 class="section-title" data-i18n="contact.title">Hãy Kết Nối Với Chúng Tôi</h2>
-      <p class="section-sub" data-i18n="contact.sub">Bạn có dự án cần tư vấn? Hãy liên hệ — chúng tôi luôn sẵn sàng hỗ trợ.</p>
-      <div class="contact-info-center">
-        <div class="contact-cta glass-card">
-          <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-            <polyline points="22,6 12,13 2,6" />
-          </svg>
-          <h3 data-i18n="contact.cta.title">Liên hệ với chúng tôi</h3>
-          <p data-i18n="contact.cta.desc">Hãy mô tả dự án hoặc yêu cầu của bạn — chúng tôi sẽ phản hồi trong thời gian sớm nhất.</p>
-          <span id="contact-mail"></span>
-        </div>
-        <div class="contact-details">
-          <div class="contact-item glass-card">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" />
-              <path d="M12 6v6l4 2" />
-            </svg>
-            <div>
-              <h4 data-i18n="contact.hours.title">Giờ làm việc</h4>
-              <p data-i18n="contact.hours.desc">Thứ 2 – Thứ 6: 8:00 – 17:30</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Kênh liên hệ -->
-      <div class="contact-channels" style="margin-top:48px">
-        <a href="https://mail.google.com/mail/?view=cm&to=contact%40heavenforgetech.com&su=Y%C3%AAu%20c%E1%BA%A7u%20t%C6%B0%20v%E1%BA%A5n"
-          target="_blank" rel="noopener noreferrer" class="channel-card glass-card">
-          <div class="channel-icon channel-email">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
-            </svg>
-          </div>
-          <h3 data-i18n="guide.channel.email">Email</h3>
-          <p data-i18n="guide.channel.email.desc">Gửi yêu cầu đăng ký qua email — chúng tôi sẽ phản hồi trong 24 giờ.</p>
-        </a>
-        <a href="https://zalo.me/0908487040" target="_blank" rel="noopener noreferrer" class="channel-card glass-card">
-          <div class="channel-icon channel-zalo">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
-              <text x="12" y="16" text-anchor="middle" fill="currentColor" font-size="10" font-weight="700" font-family="Plus Jakarta Sans, sans-serif">Z</text>
-            </svg>
-          </div>
-          <h3 data-i18n="guide.channel.zalo">Zalo</h3>
-          <p data-i18n="guide.channel.zalo.desc">Nhắn tin trực tiếp qua Zalo — tư vấn nhanh chóng, hỗ trợ tức thì.</p>
-        </a>
-        <a href="https://m.me/798002690071717" target="_blank" rel="noopener noreferrer" class="channel-card glass-card">
-          <div class="channel-icon channel-facebook">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
-                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
-          <h3 data-i18n="guide.channel.fb">Facebook</h3>
-          <p data-i18n="guide.channel.fb.desc">Liên hệ qua Facebook Messenger — kết nối dễ dàng mọi lúc.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer-inner">
@@ -358,7 +291,7 @@
         <a href="./products/" data-i18n="nav.products">Sản phẩm</a>
         <a href="./guide/" data-i18n="nav.guide">Hướng dẫn</a>
         <a href="#services" data-i18n="footer.services-title">Dịch vụ</a>
-        <a href="#contact" data-i18n="nav.contact">Liên hệ</a>
+        <a href="./contact/" data-i18n="nav.contact">Liên hệ</a>
       </div>
       <div class="footer-links">
         <h4 data-i18n="footer.services-title">Dịch vụ</h4>
