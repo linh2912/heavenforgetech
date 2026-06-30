@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -35,7 +35,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../style.css?v=4">
+    <link rel="stylesheet" href="../style.css?v=4">
     <script>document.documentElement.classList.add('js-ready');</script>
 </head>
 
@@ -52,14 +52,14 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="../../" data-i18n="nav.home">Trang chủ</a></li>
                 <li class="nav-dropdown">
-                    <a href="../" class="nav-active" data-i18n="nav.products">Sản phẩm <span class="dropdown-icon"></span></a>
+                    <a href="../" class="nav-active" data-i18n="nav.products">Sản phẩm <span class="dropdown-icon"> </span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="../about/" data-i18n="nav.products.about">Gi:i thi!u</a></li>
-                        <li><a href="./" data-i18n="nav.products.usage">Cch sử dụng</a></li>
+                        <li><a href="../about/" data-i18n="nav.products.about">Giới thiệu</a></li>
+                        <li><a href="../usage/" data-i18n="nav.products.usage">Cách sử dụng</a></li>
                     </ul>
                 </li>
-                <li><a href="../../guide/" data-i18n="nav.guide">Hư:ng dẫn</a></li>
-                <li><a href="../../contact/" class="nav-cta" data-i18n="nav.contact">Lin h!</a></li>
+                <li><a href="../../guide/" data-i18n="nav.guide">Hướng dẫn</a></li>
+                <li><a href="../../contact/" class="nav-cta" data-i18n="nav.contact">Liên hệ</a></li>
                 <li><button id="langToggle" class="lang-toggle" onclick="setLang(getLang()==='vi'?'en':'vi')">EN</button></li>
             </ul>
         </nav>
@@ -73,52 +73,52 @@
                 <aside class="article-sidebar">
                     <h4 data-i18n="usage.toc">Mục lục</h4>
                     <ul>
-                        <li><a href="#thiet-lap" data-i18n="usage.toc.1">1. Khxi tạo & Thiết lập</a></li>
-                        <li><a href="#them-vat-tu" data-i18n="usage.toc.2">2. Thm m:i vật tư</a></li>
-                        <li><a href="#quan-ly-kho" data-i18n="usage.toc.3">3. Quản l kho</a></li>
-                        <li><a href="#bao-cao" data-i18n="usage.toc.4">4. Bo co phn tch</a></li>
+                        <li><a href="#thiet-lap" data-i18n="usage.toc.1">1. Khởi tạo & Thiết lập</a></li>
+                        <li><a href="#them-vat-tu" data-i18n="usage.toc.2">2. Thêm mới vật tư</a></li>
+                        <li><a href="#quan-ly-kho" data-i18n="usage.toc.3">3. Quản lý kho</a></li>
+                        <li><a href="#bao-cao" data-i18n="usage.toc.4">4. Báo cáo phân tích</a></li>
                     </ul>
                 </aside>
 
                 <article class="article-content">
-                    <h1 style="font-size: clamp(36px, 5vw, 56px); margin-top: 0; margin-bottom: 20px; line-height: 1.2;" data-i18n="usage.title">Hư:ng Dẫn Sử Dụng <span class="accent">ForgeCore</span></h1>
+                    <h1 style="font-size: clamp(36px, 5vw, 56px); margin-top: 0; margin-bottom: 20px; line-height: 1.2;" data-i18n="usage.title">Hướng Dẫn Sử Dụng <span class="accent">ForgeCore</span></h1>
                     <p style="color: var(--fg-muted); font-size: 18px; margin-bottom: 40px;" data-i18n="usage.sub">
-                        Cng iỒm qua lung thao tc cơ bản Ồ ưa doanh nghi!p của bạn vo vận hnh trơn tru v hi!u quả.
+                        Cùng điểm qua luồng thao tác cơ bản để đưa doanh nghiệp của bạn vào vận hành trơn tru và hiệu quả.
                     </p>
-                    <p data-i18n="usage.p1">Cho mừng bạn ến v:i hư:ng dẫn sử dụng <strong>ForgeCore</strong>. Dư:i y l cc bư:c thao tc cơ bản nhất gip bạn nhanh chng lm quen v ưa h! thng vo vận hnh thực tế cho doanh nghi!p của mnh m"t cch trơn tru.</p>
+                    <p data-i18n="usage.p1">Chào mừng bạn đến với hướng dẫn sử dụng <strong>ForgeCore</strong>. Dưới đây là các bước thao tác cơ bản nhất giúp bạn nhanh chóng làm quen và đưa hệ thống vào vận hành thực tế cho doanh nghiệp của mình một cách trơn tru.</p>
 
-                    <h2 id="thiet-lap" data-i18n="usage.h2.1">1. Khxi tạo ti khoản v thiết lập thng tin</h2>
-                    <p data-i18n="usage.p2.1a">Ngay sau khi nhận ược ti khoản từ h! thng, bư:c ầu tin v bắt bu"c l bạn cần <strong>"i mật khẩu lần ầu</strong> Ồ ảm bảo an ton tuy!t i cho dữ li!u doanh nghi!p.</p>
-                    <p data-i18n="usage.p2.1b">Sau khi "i mật khẩu v Ēng nhập thnh cng, h! thng sẽ tự "ng iều ch0nh giao di!n hiỒn th9 cc tnh nĒng dựa trn vai tr phn quyền của bạn. Tiếp theo, hy truy cập phần <strong>Ci ặt</strong> Ồ thiết lập cc thng s chung. Bạn c thỒ ty ch0nh cc cấu hnh quan trọng như tiền t cho m phiếu xuất/nhập kho (v dụ: <code>PX-</code>, <code>PN-</code>), hay chọn 9nh dạng tiền t! (VNĐ, USD) sao cho ph hợp v:i thi quen kinh doanh của t" chức nhất.</p>
-                    <img src="../../assets/cai_dat.webp" alt="Giao di!n Khxi tạo v Thiết lập">
+                    <h2 id="thiet-lap" data-i18n="usage.h2.1">1. Khởi tạo tài khoản và thiết lập thông tin</h2>
+                    <p data-i18n="usage.p2.1a">Ngay sau khi nhận được tài khoản từ hệ thống, bước đầu tiên và bắt buộc là bạn cần <strong>đổi mật khẩu lần đầu</strong> để đảm bảo an toàn tuyệt đối cho dữ liệu doanh nghiệp.</p>
+                    <p data-i18n="usage.p2.1b">Sau khi đổi mật khẩu và đăng nhập thành công, hệ thống sẽ tự động điều chỉnh giao diện hiển thị các tính năng dựa trên vai trò phân quyền của bạn. Tiếp theo, hãy truy cập phần <strong>Cài đặt</strong> để thiết lập các thông số chung. Bạn có thể tùy chỉnh các cấu hình quan trọng như tiền tố cho mã phiếu xuất/nhập kho (ví dụ: <code>PX-</code>, <code>PN-</code>), hay chọn định dạng tiền tệ (VNĐ, USD) sao cho phù hợp với thói quen kinh doanh của tổ chức nhất.</p>
+                    <img src="../../assets/cai_dat.webp" alt="Giao diện Khởi tạo và Thiết lập">
 
-                    <h2 id="them-vat-tu" data-i18n="usage.h2.2">2. Thm M:i Vật Tư D& Dng</h2>
-                    <p data-i18n="usage.p2.2">Bư:c tiếp theo Ồ h! thng c thỒ hoạt "ng l ưa dữ li!u hng ha, vật tư vo danh mục. ĐỒ lm iều ny, bạn c thỒ thực hi!n theo hai cch:</p>
+                    <h2 id="them-vat-tu" data-i18n="usage.h2.2">2. Thêm Mới Vật Tư Dễ Dàng</h2>
+                    <p data-i18n="usage.p2.2">Bước tiếp theo để hệ thống có thể hoạt động là đưa dữ liệu hàng hóa, vật tư vào danh mục. Để làm điều này, bạn có thể thực hiện theo hai cách:</p>
                     <ul class="feature-list">
-                        <li data-i18n="usage.li.2a"><strong>Nhập thủ cng:</strong> Bấm vo nt "Thm m:i" v iền thng tin chi tiết cho từng loại vật tư.</li>
-                        <li data-i18n="usage.li.2b"><strong>Nhập tự "ng qua Excel:</strong> Tải ln m"t file danh sch Excel c sẵn. ForgeCore sẽ thng minh tự "ng nhận di!n cc c"t dữ li!u (như tn hng ha, m SKU, danh mục, ơn v9 tnh, s lượng) v cập nhật hng loạt vo h! thng ch0 trong vi giy.</li>
+                        <li data-i18n="usage.li.2a"><strong>Nhập thủ công:</strong> Bấm vào nút "Thêm mới" và điền thông tin chi tiết cho từng loại vật tư.</li>
+                        <li data-i18n="usage.li.2b"><strong>Nhập tự động qua Excel:</strong> Tải lên một file danh sách Excel có sẵn. ForgeCore sẽ thông minh tự động nhận diện các cột dữ liệu (như tên hàng hóa, mã SKU, danh mục, đơn vị tính, số lượng) và cập nhật hàng loạt vào hệ thống chỉ trong vài giây.</li>
                     </ul>
                     <div class="image-slideshow" style="margin: 30px 0;">
-                        <img src="../../assets/them_vt.webp" alt="Nhập thủ cng" class="slide-1">
-                        <img src="../../assets/nhap_excel.webp" alt="Nhập tự "ng qua Excel" class="slide-2">
+                        <img src="../../assets/them_vt.webp" alt="Nhập thủ công" class="slide-1">
+                        <img src="../../assets/nhap_excel.webp" alt="Nhập tự động qua Excel" class="slide-2">
                     </div>
 
-                    <h2 id="quan-ly-kho" data-i18n="usage.h2.3">3. Quản L Giao D9ch Kho</h2>
-                    <p data-i18n="usage.p2.3">Sau khi dữ li!u vật tư  sẵn sng, bạn c thỒ bắt ầu xử l cc giao d9ch hng ngy. Mi khi c l hng m:i nhập về hoặc xuất i, bạn ch0 cần iều hư:ng ến mục <strong>Phiếu Kho</strong> v tạo l!nh tương ứng. Ngay sau khi phiếu ược duy!t v hon thnh, s lượng tn kho của cc mặt hng lin quan sẽ tự "ng ược c"ng hoặc trừ tương ứng theo thời gian thực. Điều ny ảm bảo s li!u trn phần mềm lun kh:p chnh xc tuy!t i v:i s lượng thực tế trong kho.</p>
+                    <h2 id="quan-ly-kho" data-i18n="usage.h2.3">3. Quản Lý Giao Dịch Kho</h2>
+                    <p data-i18n="usage.p2.3">Sau khi dữ liệu vật tư đã sẵn sàng, bạn có thể bắt đầu xử lý các giao dịch hàng ngày. Mỗi khi có lô hàng mới nhập về hoặc xuất đi, bạn chỉ cần điều hướng đến mục <strong>Phiếu Kho</strong> và tạo lệnh tương ứng. Ngay sau khi phiếu được duyệt và hoàn thành, số lượng tồn kho của các mặt hàng liên quan sẽ tự động được cộng hoặc trừ tương ứng theo thời gian thực. Điều này đảm bảo số liệu trên phần mềm luôn khớp chính xác tuyệt đối với số lượng thực tế trong kho.</p>
                     <div class="image-slideshow" style="margin: 30px 0;">
                         <img src="../../assets/pn.webp" alt="Phiếu nhập kho" class="slide-1">
                         <img src="../../assets/fx.webp" alt="Phiếu xuất kho" class="slide-2">
                     </div>
 
-                    <h2 id="bao-cao" data-i18n="usage.h2.4">4. Bo Co Phn Tch K9p Thời</h2>
-                    <p data-i18n="usage.p2.4">Nhờ vo vi!c cc giao d9ch ược ghi nhận lin tục, trang <strong>Bo Co</strong> sẽ trx thnh cng cụ ắc lực của bạn. Tại y, bạn c thỒ d& dng xem lại ton b" hoạt "ng kinh doanh, xuất nhập tn theo ngy, thng hoặc nĒm. Cc s li!u ược trnh by dư:i dạng biỒu  sinh "ng gip bạn nhanh chng nắm bắt xu hư:ng. Khi cần thiết, bạn c thỒ xuất bo co ra file Excel v:i ầy ủ mu sắc, 9nh dạng chuẩn ch0nh Ồ sử dụng cho cc cu"c họp quan trọng hoặc gửi i tc.</p>
-                    <img src="../../assets/bao_cao.webp" alt="Giao di!n Bo co thng k">
+                    <h2 id="bao-cao" data-i18n="usage.h2.4">4. Báo Cáo Phân Tích Kịp Thời</h2>
+                    <p data-i18n="usage.p2.4">Nhờ vào việc các giao dịch được ghi nhận liên tục, trang <strong>Báo Cáo</strong> sẽ trở thành công cụ đắc lực của bạn. Tại đây, bạn có thể dễ dàng xem lại toàn bộ hoạt động kinh doanh, xuất nhập tồn theo ngày, tháng hoặc năm. Các số liệu được trình bày dưới dạng biểu đồ sinh động giúp bạn nhanh chóng nắm bắt xu hướng. Khi cần thiết, bạn có thể xuất báo cáo ra file Excel với đầy đủ màu sắc, định dạng chuẩn chỉnh để sử dụng cho các cuộc họp quan trọng hoặc gửi đối tác.</p>
+                    <img src="../../assets/bao_cao.webp" alt="Giao diện Báo cáo thống kê">
                 </article>
             </div>
         </div>
     </section>
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
+
+<footer class="footer">
         <div class="container footer-inner">
             <div class="footer-brand">
                 <img src="../../assets/HFTech_Logo_Primary_White.webp" alt="HeavenForge Tech" class="footer-logo">
@@ -126,17 +126,17 @@
             </div>
             <div class="footer-links">
                 <h4 data-i18n="footer.links">Liên kết</h4>
-                <a href="../../#about" data-i18n="footer.about">Giới thiệu</a>
-                <a href="../../products/" data-i18n="nav.products">Sản phẩm</a>
-                <a href="../../guide/" data-i18n="nav.guide">Hướng dẫn</a>
-                <a href="../../#services" data-i18n="footer.services-title">Dịch vụ</a>
-                <a href="../../contact/" data-i18n="nav.contact">Liên hệ</a>
+                <a href="../#about" data-i18n="footer.about">Giới thiệu</a>
+                <a href="./">Sản phẩm</a>
+                <a href="../guide/">Hướng dẫn</a>
+                <a href="../#services" data-i18n="footer.services-title">Dịch vụ</a>
+                <a href="../contact/">Liên hệ</a>
             </div>
             <div class="footer-links">
                 <h4 data-i18n="footer.services-title">Dịch vụ</h4>
-                <a href="../../#services" data-i18n="footer.dev">Phát triển phần mềm</a>
-                <a href="../../#services" data-i18n="footer.erp">Giải pháp ERP</a>
-                <a href="../../#services" data-i18n="footer.digital">Chuyển đổi số</a>
+                <a href="../#services" data-i18n="footer.dev">Phát triển phần mềm</a>
+                <a href="../#services" data-i18n="footer.erp">Giải pháp ERP</a>
+                <a href="../#services" data-i18n="footer.digital">Chuyển đổi số</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -144,9 +144,8 @@
         </div>
     </footer>
 
-    <script src="../../i18n.js?v=1"></script>
-    <script src="../../main.js?v=5" defer></script>
+    <script src="../i18n.js?v=1"></script>
+    <script src="../main.js?v=5" defer></script>
 </body>
 
 </html>
-
