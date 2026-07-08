@@ -486,6 +486,10 @@ const TRANSLATIONS = {
   'products.showcase.14.l2': { vi: 'Tùy chỉnh giao diện & thông báo', en: 'Customize UI & notifications' },
   'products.showcase.14.l3': { vi: 'Quản lý dữ liệu & nhật ký hệ thống', en: 'Manage data & system logs' },
   'products.showcase.14.l4': { vi: 'Cấu hình nhiều tab — gọn gàng, rõ ràng', en: 'Multi-tab config — clean, clear' },
+    'products.showcase.btn_more': { vi: 'Xem thêm chức năng', en: 'View more features' },
+  'products.showcase.btn_less': { vi: 'Thu gọn nội dung', en: 'Show less' },
+'products.showcase.btn_more': { vi: 'Xem thêm chức năng', en: 'View more features' },
+  'products.showcase.btn_less': { vi: 'Thu gọn nội dung', en: 'Show less' },
 
   'products.up.0.title': { vi: 'Quản lý Đơn hàng', en: 'Order Management' },
   'products.up.0.desc': { vi: 'Tạo và theo dõi đơn đặt hàng từ khách hàng. Quản lý trạng thái đơn từ tiếp nhận đến hoàn thành, thống kê số lượng đơn và doanh thu theo thời gian.', en: 'Create and track customer orders. Manage status from receipt to completion, order count and revenue stats over time.' },
