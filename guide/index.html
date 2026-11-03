@@ -27,35 +27,27 @@
     <link rel="icon" type="image/webp" href="../assets/favicon.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../style.css?v=5">
     <script>document.documentElement.classList.add('js-ready');</script>
 </head>
 
 <body>
-  <!-- Background Effect Container -->
-  <div id="bg-effect" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1; background: #02030a; overflow: hidden;"></div>
     <!-- ===== HEADER ===== -->
     <header id="header">
         <nav class="nav-container">
-            <a href="../" class="nav-logo">
+            <a href="../index.html" class="nav-logo">
                 <img src="../assets/HFTech_Logo_Primary_White.webp" alt="HeavenForge Tech" class="nav-logo-img">
             </a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="../" data-i18n="nav.home">Trang chủ</a></li>
-                <li class="nav-dropdown">
-                    <a href="../products/" data-i18n="nav.products">Sản phẩm <span class="dropdown-icon">▾</span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../products/about/" data-i18n="nav.products.about">Giới thiệu</a></li>
-                        <li><a href="../products/usage/" data-i18n="nav.products.usage">Cách sử dụng</a></li>
-                    </ul>
-                </li>
+                <li><a href="../index.html" data-i18n="nav.home">Trang chủ</a></li>
+                <li><a href="../products/" data-i18n="nav.products">Sản phẩm</a></li>
                 <li><a href="./" class="nav-active" data-i18n="nav.guide">Hướng dẫn</a></li>
-                <li><a href="../contact/" class="nav-cta" data-i18n="nav.contact">Liên hệ</a></li>
+                <li><a href="../index.html#contact" class="nav-cta" data-i18n="nav.contact">Liên hệ</a></li>
                 <li><button id="langToggle" class="lang-toggle" onclick="setLang(getLang()==='vi'?'en':'vi')">EN</button></li>
             </ul>
         </nav>
@@ -127,7 +119,7 @@
                         <svg width="48" height="48" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
                             <text x="12" y="16" text-anchor="middle" fill="currentColor"
-                                font-size="10" font-weight="700" font-family="Plus Jakarta Sans, sans-serif">Z</text>
+                                font-size="10" font-weight="700" font-family="Inter, sans-serif">Z</text>
                         </svg>
                     </div>
                     <h3 data-i18n="guide.channel.zalo">Zalo</h3>
@@ -256,14 +248,14 @@
                 <table class="compare-table">
                     <thead>
                         <tr>
-                            <th>Tiêu chí</th>
+                            <th data-i18n="guide.compare.th.criteria">Tiêu chí</th>
                             <th class="compare-old">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" aria-hidden="true" style="vertical-align:middle; margin-right:6px; opacity:.6">
                                     <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
                                     <polyline points="14 2 14 8 20 8" />
                                 </svg>
-                                Thủ công / Excel
+                                <span data-i18n="guide.compare.th.old">Thủ công / Excel</span>
                             </th>
                             <th class="compare-new">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -271,53 +263,53 @@
                                     <rect x="2" y="3" width="20" height="14" rx="2" />
                                     <path d="M8 21h8M12 17v4" />
                                 </svg>
-                                ForgeCore
+                                <span data-i18n="guide.compare.th.new">ForgeCore</span>
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong data-i18n="guide.compare.r1.th">Nhập liệu</strong></td>
+                            <td><strong data-i18n="guide.compare.r1.label">Nhập liệu</strong></td>
                             <td class="compare-old" data-i18n="guide.compare.r1.old">Ghi tay, nhập thủ công vào sổ sách hoặc Excel — dễ sai sót, mất thời gian</td>
                             <td class="compare-new" data-i18n="guide.compare.r1.new">Nhập một lần trên hệ thống — dữ liệu tự động đồng bộ mọi nơi</td>
                         </tr>
                         <tr>
-                            <td><strong data-i18n="guide.compare.r2.th">Tồn kho</strong></td>
+                            <td><strong data-i18n="guide.compare.r2.label">Tồn kho</strong></td>
                             <td class="compare-old" data-i18n="guide.compare.r2.old">Kiểm đếm thủ công, không biết real-time — dễ bị lệch số liệu</td>
                             <td class="compare-new" data-i18n="guide.compare.r2.new">Cập nhật tự động khi nhập/xuất kho — luôn chính xác theo thời gian thực</td>
                         </tr>
                         <tr>
-                            <td><strong data-i18n="guide.compare.r3.th">Tạo phiếu</strong></td>
+                            <td><strong data-i18n="guide.compare.r3.label">Tạo phiếu</strong></td>
                             <td class="compare-old" data-i18n="guide.compare.r3.old">Viết phiếu tay hoặc copy template Excel — chậm, dễ nhầm</td>
                             <td class="compare-new" data-i18n="guide.compare.r3.new">Tạo phiếu tự động, mã phiếu tự sinh — chỉ vài click</td>
                         </tr>
                         <tr>
-                            <td><strong data-i18n="guide.compare.r4.th">Báo cáo</strong></td>
+                            <td><strong data-i18n="guide.compare.r4.label">Báo cáo</strong></td>
                             <td class="compare-old" data-i18n="guide.compare.r4.old">Tự tổng hợp bằng tay, mất hàng giờ — khó đảm bảo chính xác</td>
                             <td class="compare-new" data-i18n="guide.compare.r4.new">Báo cáo tự động, biểu đồ trực quan — xem ngay trên dashboard</td>
                         </tr>
                         <tr>
-                            <td><strong data-i18n="guide.compare.r5.th">Tìm kiếm</strong></td>
+                            <td><strong data-i18n="guide.compare.r5.label">Tìm kiếm</strong></td>
                             <td class="compare-old" data-i18n="guide.compare.r5.old">Lật sổ, dò file Excel — mất thời gian, khó tra cứu khi dữ liệu lớn</td>
                             <td class="compare-new" data-i18n="guide.compare.r5.new">Tìm kiếm tức thì theo tên, mã, danh mục — kết quả trong giây</td>
                         </tr>
                         <tr>
-                            <td><strong data-i18n="guide.compare.r6.th">Bảo mật</strong></td>
+                            <td><strong data-i18n="guide.compare.r6.label">Bảo mật</strong></td>
                             <td class="compare-old" data-i18n="guide.compare.r6.old">Sổ sách có thể bị mất, hỏng, không kiểm soát người xem</td>
                             <td class="compare-new" data-i18n="guide.compare.r6.new">Dữ liệu mã hóa, phân quyền truy cập, nhật ký theo dõi hành vi</td>
                         </tr>
                         <tr>
-                            <td><strong data-i18n="guide.compare.r7.th">Cảnh báo</strong></td>
+                            <td><strong data-i18n="guide.compare.r7.label">Cảnh báo</strong></td>
                             <td class="compare-old" data-i18n="guide.compare.r7.old">Không có — chỉ phát hiện khi đã hết hàng hoặc gặp sự cố</td>
                             <td class="compare-new" data-i18n="guide.compare.r7.new">Cảnh báo tự động khi tồn kho thấp, phiếu mới, hóa đơn quá hạn</td>
                         </tr>
                         <tr>
-                            <td><strong data-i18n="guide.compare.r8.th">Làm việc nhóm</strong></td>
+                            <td><strong data-i18n="guide.compare.r8.label">Làm việc nhóm</strong></td>
                             <td class="compare-old" data-i18n="guide.compare.r8.old">Truyền tay sổ sách, gửi file qua email — dễ chồng chéo phiên bản</td>
                             <td class="compare-new" data-i18n="guide.compare.r8.new">Nhiều người dùng cùng lúc — dữ liệu cập nhật đồng bộ, không xung đột</td>
                         </tr>
                         <tr>
-                            <td><strong data-i18n="guide.compare.r9.th">Chi phí vận hành</strong></td>
+                            <td><strong data-i18n="guide.compare.r9.label">Chi phí vận hành</strong></td>
                             <td class="compare-old" data-i18n="guide.compare.r9.old">Tốn giấy, in ấn, nhân sự kiểm kê — chi phí ẩn tích lũy lớn</td>
                             <td class="compare-new" data-i18n="guide.compare.r9.new">Giảm nhân sự xử lý thủ công, tiết kiệm giấy và thời gian</td>
                         </tr>
@@ -337,7 +329,7 @@
                 <div class="hero-btns">
                     <a href="#register" class="btn btn-primary" data-i18n="guide.cta.btn.register">Đăng ký ngay</a>
                     <a href="../products/" class="btn btn-outline" data-i18n="guide.cta.btn.products">Xem sản phẩm</a>
-                    <a href="../" class="btn btn-outline" data-i18n="guide.cta.btn.home">Về trang chủ</a>
+                    <a href="../index.html" class="btn btn-outline" data-i18n="guide.cta.btn.home">Về trang chủ</a>
                 </div>
             </div>
         </div>
@@ -352,17 +344,16 @@
             </div>
             <div class="footer-links">
                 <h4 data-i18n="footer.links">Liên kết</h4>
-                <a href="../#about" data-i18n="footer.about">Giới thiệu</a>
+                <a href="../index.html#about" data-i18n="footer.about">Giới thiệu</a>
                 <a href="../products/" data-i18n="nav.products">Sản phẩm</a>
                 <a href="./" data-i18n="nav.guide">Hướng dẫn</a>
-                <a href="../#services" data-i18n="footer.services-title">Dịch vụ</a>
-                <a href="../contact/" data-i18n="nav.contact">Liên hệ</a>
+                <a href="../index.html#contact" data-i18n="nav.contact">Liên hệ</a>
             </div>
             <div class="footer-links">
                 <h4 data-i18n="footer.services-title">Dịch vụ</h4>
-                <a href="../#services" data-i18n="footer.dev">Phát triển phần mềm</a>
-                <a href="../#services" data-i18n="footer.erp">Giải pháp ERP</a>
-                <a href="../#services" data-i18n="footer.digital">Chuyển đổi số</a>
+                <a href="../index.html#services" data-i18n="footer.dev">Phát triển phần mềm</a>
+                <a href="../index.html#services" data-i18n="footer.erp">Giải pháp ERP</a>
+                <a href="../index.html#services" data-i18n="footer.digital">Chuyển đổi số</a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -370,24 +361,8 @@
         </div>
     </footer>
 
-    <script src="../i18n.js?v=1"></script>
+    <script src="../i18n.js?v=2"></script>
     <script src="../main.js?v=5" defer></script>
-
-  <script src="../assets/rising-lines.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      new RisingLines('#bg-effect', {
-        particles: 500,
-        color: "#2C2F53",
-        riseSpeed: 25,
-        opacity: 100,
-        scale: 7,
-        showHorizon: false,
-        horizonColor: "#2C2F53",
-        horizonOpacity: 85
-      });
-    });
-  </script>
 </body>
 
 </html>
