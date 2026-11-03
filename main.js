@@ -48,18 +48,26 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 
-// === Scroll reveal animations ===
+// === Scroll reveal animations (smooth one-time reveal to avoid scroll stutter) ===
 const REVEAL_SELECTOR = '.glass-card, .tech-item, .section-title, .section-label, .section-sub, .hero-content > *';
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-const revealObserver = new IntersectionObserver(function (entries) {
-  entries.forEach(function (entry) {
-    entry.target.classList.toggle('visible', entry.isIntersecting);
+if (prefersReducedMotion) {
+  document.querySelectorAll(REVEAL_SELECTOR).forEach(el => el.classList.add('visible'));
+} else {
+  const revealObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+
+  document.querySelectorAll(REVEAL_SELECTOR).forEach(function (el) {
+    revealObserver.observe(el);
   });
-}, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
-
-document.querySelectorAll(REVEAL_SELECTOR).forEach(function (el) {
-  revealObserver.observe(el);
-});
+}
 
 // === Dynamic copyright year ===
 document.querySelectorAll('.footer-bottom p').forEach(p => {
